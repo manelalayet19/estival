@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy tickets </title>
+    <link href="./css/buy.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Full name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
+            <label for="passes">Number of Passes</label>
+            <select name="passes" id="passes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments"></textarea>
+        </fieldset>
+        <button id="buy">Purchase</button>
+        <button id="home">Home</button>
+        <div id="messageContainer"></div>
+    </form>
+</body>
+<script>
+    const home = document.querySelector('#home');
+        home.addEventListener('click', () => {
+            window.location.href = "index.html";
+        });
+    const validation = document.querySelector('#buy');
+    const body = document.querySelector('body');
+    const messageContainer = document.querySelector('#messageContainer');
+
+    validation.addEventListener('click', () => {
+        const span = document.createElement('span');
+        span.innerHTML = "Thank you for your purchase. You will receive a confirmation email.";
+        span.style.color = 'green';
+        span.style.fontSize = '20px';
+        span.style.display = "block";
+        messageContainer.appendChild(span);
+    });
+
+</script>
+
+</html>

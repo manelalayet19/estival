@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket perchase </title>
+    <link rel="stylesheet" href="css/ticket.css" />
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+
+            <li><a class="active" href="index.html">HOME</a></li>
+
+            <li><a href="about.html">ABOUT</a></li>
+
+            <li><a href="tickets.html">TICKETS</a></li>
+
+        </ul>
+
+        <div class="left">
+            <a href="signup">Sign up</a>
+            <a href="login" id="login">login</a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="ticket">
+            <div class="left-card">
+                <div class="image">
+                    <p class="admit-one">
+                        <span>ADMIT ONE</span>
+                        <span>ADMIT ONE</span>
+                        <span>ADMIT ONE</span>
+
+                    </p>
+                    <div class="ticket-number">
+                        <p>
+                            #20030220
+                        </p>
+                    </div>
+                </div>
+                <div class="ticket-info">
+                    <p class="date">
+                        <span>TUESDAY</span>
+                        <span class="june-29">JUNE 29TH</span>
+                        <span>2023</span>
+                    </p>
+                    <div class="show-name">
+                        <h1>UK FESTIVAL</h1>
+                        <h2>Metalica</h2>
+                    </div>
+                    <div class="time">
+                        <p>8:00 PM <span>TO</span> 11:00 PM</p>
+                        <p>DOORS <span>@</span> 7:00 PM</p>
+                    </div>
+                    <p class="location"><span>UK</span>
+                        <span class="separator"><i class="far fa-smile"></i></span><span>London, UK</span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <p class="admit-one">
+                    <span>ADMIT ONE</span>
+                    <span>ADMIT ONE</span>
+                    <span>ADMIT ONE</span>
+                    <span>ADMIT ONE</span>
+                    <span>ADMIT ONE</span>
+                    <span>ADMIT ONE</span>
+                </p>
+                <div class="right-info-container">
+                    <div class="show-name">
+                        <h1>UK GRAND FESTIVAL</h1>
+                    </div>
+                    <div class="time">
+                        <p>8:00 PM <span>TO</span> 11:00 PM</p>
+                        <p>DOORS <span>@</span> 7:00 PM</p>
+                    </div>
+                    <div class="barcode">
+                        <img src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb"
+                            alt="QR code">
+                    </div>
+                    <p class="ticket-number">
+                        #20030220
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <p class="text">FRIDAYS HEADLINERS <sub class="subtext">AVENGED SEVENFOLD | SLIPKNOT | IRON MAIDEN </sub>
+            </p>
+            <p class="text">SATURDAYS HEADLINERS <sub class="subtext">METALLICA | BRING ME THE HORIZON | KISS</sub></p>
+            <p class="text">SUNDAY HEADLINERS <sub class="subtext">MY CHEMICAL ROMANCE | PARAMOUR | SLAYER</sub></p>
+        </div>
+        <div class="button-click">
+            <div class="purchase">
+                <button id="buy">BUY TICKET</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="copyright">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">
+                UK festival
+            </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+</body>
+<script>
+    const buy = document.querySelector('#buy');
+    buy.addEventListener('click', () => {
+        window.location.href = "buy.html";
+    })
+</script>
+
+</html>

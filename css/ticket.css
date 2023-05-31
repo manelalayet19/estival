@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    color: unset ;
+}
+
+body,
+html {
+	height: 100vh;
+	font-family: sans-serif;
+	background: black !important;
+	color: black;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+body {
+    display : flex  ;
+    flex-direction : column ;
+}
+.container {
+    flex : 1 ;
+}
+.ticket {
+	margin: auto;
+	display: flex;
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+div.left {
+    color : pink !important;
+    font-size : 18px  ;
+    text-transform : uppercase ;
+  margin-right : 45px ;
+  display :flex ;
+  gap :40px ;
+  justify-content: center;
+      align-content: center;
+      align-items: center;
+      padding:1em ;
+  }
+  a#login{
+    background-color: white;
+      width: 175px;
+      padding: 10px 30px;
+      text-align: center;
+      font-weight: bolder;
+      border-radius: 25px;
+  }
+  a#login:hover{
+    background-color : #38ed7c;
+    color : #ffffff;
+    font-weight : bold ;
+  }
+  nav{
+    display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      margin-bottom : 40px ;
+      align-items: center;
+font-size:18px ;
+  }
+  li{
+    list-style : none ;
+  }
+  a{
+    text-decoration :none ;
+  }
+.left-card {
+	display: flex;
+}
+
+.image {
+	height: 350px;
+	width: 250px;
+	background-image: url("https://www.nme.com/wp-content/uploads/2019/03/Webp.net-resizeimage-2.jpg");
+	background-size: cover;
+	opacity: 0.85;
+}
+a:link
+  {text-decoration: none;
+  font-family: helvetica;
+  color:pink !important ;
+  }
+
+.admit-one {
+	position: absolute;
+	color: darkgray;
+	height: 320px;
+	padding: 0 10px;
+	letter-spacing: 0.15em;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+}
+
+.admit-one span:nth-child(2) {
+	color: white;
+	font-weight: 700;
+}
+
+.left-card .ticket-number {
+	height: 250px;
+	width: 250px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 5px;
+}
+
+.ticket-info {
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 5px 0;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.date span {
+	width: 100px;
+}
+
+.date span:first-child {
+	text-align: left;
+}
+
+.date span:last-child {
+	text-align: right;
+}
+
+.date .june-29 {
+	color: #d83565;
+	font-size: 20px;
+}
+
+.show-name {
+	font-size: 32px;
+	font-family: "Nanum Pen Script", cursive;
+	color: #d83565;
+}
+
+.show-name h1 {
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	color: #4a437e;
+}
+
+.time {
+	padding: 10px 0;
+	color: #4a437e;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 700;
+}
+
+.time span {
+	font-weight: 400;
+	color: gray;
+}
+
+.left-card .time {
+	font-size: 16px;
+}
+
+
+.location {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-top: 8px;
+	border-top: 1px solid gray;
+}
+
+.location .separator {
+	font-size: 20px;
+}
+
+.right {
+	width: 100%;
+	border-left: 1px dashed #404040;
+}
+
+.right .admit-one {
+	color: darkgray;
+}
+
+.right .admit-one span:nth-child(2) {
+	color: pink;
+}
+
+.right .right-info-container {
+	height: 100%;
+	padding: 10px 10px 10px 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.right .show-name h1 {
+	font-size: 18px;
+}
+
+.barcode {
+	height: 100px;
+}
+
+.barcode img {
+	height: 100%;
+}
+
+.right .ticket-number {
+	color: gray;
+}
+.ticket {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    color: pink !important;
+    padding: 1em;
+    margin-top: 10px;
+    font-size: 18px;
+}
+@keyframes slideIn {
+    from {
+        transform: translate(-90%);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+.ticket {
+    animation: slideIn 3s ease;
+    margin-bottom : 40px !important ;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto !important;
+    text-align:center;
+gap:10px ;
+
+}.text{
+    margin-bottom : 10px ;
+  }
+  .subtext{
+    margin-top : 10px ;
+    font-family: helvetica;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    color: pink;
+    font-weight: bolder;
+  }
+footer{
+    z-index : 1030 ;
+    bottom : 0 ;
+    left : 0;
+    right : 0 ;
+    width :100% ;
+    color : white ;
+    background-color :#eeb1d8 ;
+    height :57px ;
+    padding :1em ;
+  }
+footer .copyright{
+    text-align : center ;
+color : white ;
+display : flex  ;
+justify-content : center ;
+  }
+footer .copyright a {
+    color : black ;
+  }
+
+ .purchase {
+    margin-top : 40px ;
+ }
+ .button-click {
+    width :80% ;
+    margin:0 auto ;
+ }
+ .button-click  button{
+    background-color:#d83565 ;
+    padding : 10px 30px ;
+    border-radius : 5px ;
+    width :100% ;
+    margin: 0 auto ;
+ }
